@@ -1,0 +1,966 @@
+[
+    {
+  "name": "Marcus Chen",
+  "gender": "Male",
+  "age": 62,
+  "image_path": "./src/assets/img/MarcusChen.webp",
+  "date_of_birth": "1964-03-12",
+  "phone_number": "(510) 555-0192",
+  "emergency_contact": "(510) 555-0988",
+  "insurance_type": "Blue Shield Horizon", 
+  "diagnosis_history": [
+  {
+    "month": "March",
+    "year": 2024,
+    "blood_pressure": {
+      "systolic": { "value": 263, "levels": "Higher than Average" },
+      "diastolic": { "value": 85, "levels": "Normal" }
+    },
+    "heart_rate": { "value": 79, "levels": "Lower than Average" },
+    "respiratory_rate": { "value": 27, "levels": "Normal" },
+    "temperature": { "value": 103, "levels": "Higher than Average" }
+  },
+  {
+    "month": "February",
+    "year": 2024,
+    "blood_pressure": {
+      "systolic": { "value": 180, "levels": "Higher than Average" },
+      "diastolic": { "value": 90, "levels": "Normal" }
+    },
+    "heart_rate": { "value": 85, "levels": "Normal" },
+    "respiratory_rate": { "value": 22, "levels": "Normal" },
+    "temperature": { "value": 100, "levels": "Normal" }
+  },
+  {
+    "month": "January",
+    "year": 2024,
+    "blood_pressure": {
+      "systolic": { "value": 170, "levels": "Higher than Average" },
+      "diastolic": { "value": 88, "levels": "Normal" }
+    },
+    "heart_rate": { "value": 82, "levels": "Normal" },
+    "respiratory_rate": { "value": 20, "levels": "Normal" },
+    "temperature": { "value": 99, "levels": "Normal" }
+  },
+  {
+    "month": "December",
+    "year": 2023,
+    "blood_pressure": {
+      "systolic": { "value": 160, "levels": "Higher than Average" },
+      "diastolic": { "value": 85, "levels": "Normal" }
+    },
+    "heart_rate": { "value": 78, "levels": "Normal" },
+    "respiratory_rate": { "value": 18, "levels": "Normal" },
+    "temperature": { "value": 98.6, "levels": "Normal" }
+  }
+  ],
+  "diagnostic_list": [
+    {
+      "name": "Congestive Heart Failure",
+      "description": "Chronic progressive condition affecting the pumping power of heart muscles.",
+      "status": "Actively being treated"
+    },
+    {
+      "name": "Chronic Kidney Disease",
+      "description": "Gradual loss of kidney function over time.",
+      "status": "Under observation"
+    }
+  ],
+  "lab_results": ["BNP Test", "Creatinine Level", "Chest X-Ray", "Renal Ultrasound"]
+},
+  {
+    "name": "David Miller",
+    "gender": "Male",
+    "age": 29,
+    "image_path": "./src/assets/img/DavidMiller.webp",
+    "date_of_birth": "1997-05-12",
+    "phone_number": "(202) 555-0147",
+    "emergency_contact": "(202) 555-0199",
+    "insurance_type": "Apex Health Group",
+    "diagnosis_history": [{ 
+            "month":"March",
+            "year":2024,
+            "blood_pressure":{
+               "systolic":{
+                  "value":263,
+                  "levels":"Higher than Average"
+               },
+               "diastolic":{
+                  "value":85,
+                  "levels":"Normal"
+               }
+            },
+            "heart_rate":{
+               "value":79,
+               "levels":"Lower than Average"
+            },
+            "respiratory_rate":{
+               "value":27,
+               "levels":"Normal"
+            },
+            "temperature":{
+               "value":103,
+               "levels":"Higher than Average"
+            }
+         },
+         {
+            "month":"February",
+            "year":2024,
+            "blood_pressure":{
+               "systolic":{
+                  "value":151,
+                  "levels":"Higher than Average"
+               },
+               "diastolic":{
+                  "value":120,
+                  "levels":"Normal"
+               }
+            },
+            "heart_rate":{
+               "value":88,
+               "levels":"Normal"
+            },
+            "respiratory_rate":{
+               "value":27,
+               "levels":"Normal"
+            },
+            "temperature":{
+               "value":99,
+               "levels":"Normal"
+            }
+         },
+         {
+            "month":"January",
+            "year":2024,
+            "blood_pressure":{
+               "systolic":{
+                  "value":168,
+                  "levels":"Higher than Average"
+               },
+               "diastolic":{
+                  "value":77,
+                  "levels":"Lower than Average"
+               }
+            },
+            "heart_rate":{
+               "value":82,
+               "levels":"Normal"
+            },
+            "respiratory_rate":{
+               "value":17,
+               "levels":"Normal"
+            },
+            "temperature":{
+               "value":97,
+               "levels":"Normal"
+            }
+         },
+         {
+            "month":"December",
+            "year":2023,
+            "blood_pressure":{
+               "systolic":{
+                  "value":158,
+                  "levels":"Higher than Average"
+               },
+               "diastolic":{
+                  "value":92,
+                  "levels":"Normal"
+               }
+            },
+            "heart_rate":{
+               "value":60,
+               "levels":"Lower than Average"
+            },
+            "respiratory_rate":{
+               "value":21,
+               "levels":"Normal"
+            },
+            "temperature":{
+               "value":99,
+               "levels":"Normal"
+            }
+         },
+         {
+            "month":"November",
+            "year":2023,
+            "blood_pressure":{
+               "systolic":{
+                  "value":117,
+                  "levels":"Normal"
+               },
+               "diastolic":{
+                  "value":95,
+                  "levels":"Normal"
+               }
+            },
+            "heart_rate":{
+               "value":100,
+               "levels":"Normal"
+            },
+            "respiratory_rate":{
+               "value":21,
+               "levels":"Normal"
+            },
+            "temperature":{
+               "value":103,
+               "levels":"Higher than Average"
+            }
+         },
+         {
+            "month":"October",
+            "year":2023,
+            "blood_pressure":{
+               "systolic":{
+                  "value":115,
+                  "levels":"Normal"
+               },
+               "diastolic":{
+                  "value":80,
+                  "levels":"Lower than Average"
+               }
+            },
+            "heart_rate":{
+               "value":63,
+               "levels":"Lower than Average"
+            },
+            "respiratory_rate":{
+               "value":14,
+               "levels":"Normal"
+            },
+            "temperature":{
+               "value":100,
+               "levels":"Normal"
+            }
+         },
+         {
+            "month":"September",
+            "year":2023,
+            "blood_pressure":{
+               "systolic":{
+                  "value":133,
+                  "levels":"Higher than Average"
+               },
+               "diastolic":{
+                  "value":68,
+                  "levels":"Lower than Average"
+               }
+            },
+            "heart_rate":{
+               "value":91,
+               "levels":"Normal"
+            },
+            "respiratory_rate":{
+               "value":13,
+               "levels":"Normal"
+            },
+            "temperature":{
+               "value":99,
+               "levels":"Normal"
+            }
+         },
+         {
+            "month":"August",
+            "year":2023,
+            "blood_pressure":{
+               "systolic":{
+                  "value":149,
+                  "levels":"Higher than Average"
+               },
+               "diastolic":{
+                  "value":70,
+                  "levels":"Lower than Average"
+               }
+            },
+            "heart_rate":{
+               "value":69,
+               "levels":"Lower than Average"
+            },
+            "respiratory_rate":{
+               "value":14,
+               "levels":"Normal"
+            },
+            "temperature":{
+               "value":100,
+               "levels":"Normal"
+            }
+         },
+         {
+            "month":"July",
+            "year":2023,
+            "blood_pressure":{
+               "systolic":{
+                  "value":165,
+                  "levels":"Higher than Average"
+               },
+               "diastolic":{
+                  "value":95,
+                  "levels":"Normal"
+               }
+            },
+            "heart_rate":{
+               "value":71,
+               "levels":"Lower than Average"
+            },
+            "respiratory_rate":{
+               "value":14,
+               "levels":"Normal"
+            },
+            "temperature":{
+               "value":100,
+               "levels":"Normal"
+            }
+         }
+      ],
+
+    "diagnostic_list": [
+      { "name": "Concussion", "description": "A brain injury caused by a blow to the head.", "status": "Cured" }
+    ],
+    "lab_results": ["MRI Scan", "Neurological Assessment"]
+  },
+  {
+    "name": "Linda Thompson",
+    "gender": "Female",
+    "age": 67,
+    "image_path": "./src/assets/img/LindaThompson.webp",
+    "date_of_birth": "1959-01-30",
+    "phone_number": "(415) 555-0122",
+    "emergency_contact": "(415) 555-0133",
+    "insurance_type": "Medicare Advantage",
+    "diagnosis_history": [
+      {
+        "month": "March",
+        "year": 2024,
+        "blood_pressure": { "systolic": { "value": 145, "levels": "Higher than Average" }, "diastolic": { "value": 88, "levels": "Normal" } },
+        "heart_rate": { "value": 82, "levels": "Normal" },
+        "respiratory_rate": { "value": 22, "levels": "Normal" },
+        "temperature": { "value": 98.9, "levels": "Normal" }
+      }
+    ],
+    "diagnostic_list": [
+      { "name": "Osteoporosis", "description": "Weakening of bones making them fragile.", "status": "Under observation" },
+      { "name": "Hypothyroidism", "description": "Underactive thyroid gland.", "status": "Actively being treated" }
+    ],
+    "lab_results": ["Bone Density Scan", "TSH Level Test", "Calcium Blood Test"]
+  },
+  {
+    "name": "Kevin White",
+    "gender": "Male",
+    "age": 41,
+    "image_path": "./src/assets/img/KevinWhite.webp",
+    "date_of_birth": "1985-08-14",
+    "phone_number": "(617) 555-0188",
+    "emergency_contact": "(617) 555-0155",
+    "insurance_type": "Liberty Health",
+    "diagnosis_history": [{ 
+            "month":"March",
+            "year":2024,
+            "blood_pressure":{
+               "systolic":{
+                  "value":263,
+                  "levels":"Higher than Average"
+               },
+               "diastolic":{
+                  "value":85,
+                  "levels":"Normal"
+               }
+            },
+            "heart_rate":{
+               "value":79,
+               "levels":"Lower than Average"
+            },
+            "respiratory_rate":{
+               "value":27,
+               "levels":"Normal"
+            },
+            "temperature":{
+               "value":103,
+               "levels":"Higher than Average"
+            }
+         },
+         {
+            "month":"February",
+            "year":2024,
+            "blood_pressure":{
+               "systolic":{
+                  "value":151,
+                  "levels":"Higher than Average"
+               },
+               "diastolic":{
+                  "value":120,
+                  "levels":"Normal"
+               }
+            },
+            "heart_rate":{
+               "value":88,
+               "levels":"Normal"
+            },
+            "respiratory_rate":{
+               "value":27,
+               "levels":"Normal"
+            },
+            "temperature":{
+               "value":99,
+               "levels":"Normal"
+            }
+         },
+         {
+            "month":"January",
+            "year":2024,
+            "blood_pressure":{
+               "systolic":{
+                  "value":168,
+                  "levels":"Higher than Average"
+               },
+               "diastolic":{
+                  "value":77,
+                  "levels":"Lower than Average"
+               }
+            },
+            "heart_rate":{
+               "value":82,
+               "levels":"Normal"
+            },
+            "respiratory_rate":{
+               "value":17,
+               "levels":"Normal"
+            },
+            "temperature":{
+               "value":97,
+               "levels":"Normal"
+            }
+         },
+         {
+            "month":"December",
+            "year":2023,
+            "blood_pressure":{
+               "systolic":{
+                  "value":158,
+                  "levels":"Higher than Average"
+               },
+               "diastolic":{
+                  "value":92,
+                  "levels":"Normal"
+               }
+            },
+            "heart_rate":{
+               "value":60,
+               "levels":"Lower than Average"
+            },
+            "respiratory_rate":{
+               "value":21,
+               "levels":"Normal"
+            },
+            "temperature":{
+               "value":99,
+               "levels":"Normal"
+            }
+         },
+         {
+            "month":"November",
+            "year":2023,
+            "blood_pressure":{
+               "systolic":{
+                  "value":117,
+                  "levels":"Normal"
+               },
+               "diastolic":{
+                  "value":95,
+                  "levels":"Normal"
+               }
+            },
+            "heart_rate":{
+               "value":100,
+               "levels":"Normal"
+            },
+            "respiratory_rate":{
+               "value":21,
+               "levels":"Normal"
+            },
+            "temperature":{
+               "value":103,
+               "levels":"Higher than Average"
+            }
+         },
+         {
+            "month":"October",
+            "year":2023,
+            "blood_pressure":{
+               "systolic":{
+                  "value":115,
+                  "levels":"Normal"
+               },
+               "diastolic":{
+                  "value":80,
+                  "levels":"Lower than Average"
+               }
+            },
+            "heart_rate":{
+               "value":63,
+               "levels":"Lower than Average"
+            },
+            "respiratory_rate":{
+               "value":14,
+               "levels":"Normal"
+            },
+            "temperature":{
+               "value":100,
+               "levels":"Normal"
+            }
+         },
+         {
+            "month":"September",
+            "year":2023,
+            "blood_pressure":{
+               "systolic":{
+                  "value":133,
+                  "levels":"Higher than Average"
+               },
+               "diastolic":{
+                  "value":68,
+                  "levels":"Lower than Average"
+               }
+            },
+            "heart_rate":{
+               "value":91,
+               "levels":"Normal"
+            },
+            "respiratory_rate":{
+               "value":13,
+               "levels":"Normal"
+            },
+            "temperature":{
+               "value":99,
+               "levels":"Normal"
+            }
+         },
+         {
+            "month":"August",
+            "year":2023,
+            "blood_pressure":{
+               "systolic":{
+                  "value":149,
+                  "levels":"Higher than Average"
+               },
+               "diastolic":{
+                  "value":70,
+                  "levels":"Lower than Average"
+               }
+            },
+            "heart_rate":{
+               "value":69,
+               "levels":"Lower than Average"
+            },
+            "respiratory_rate":{
+               "value":14,
+               "levels":"Normal"
+            },
+            "temperature":{
+               "value":100,
+               "levels":"Normal"
+            }
+         },
+         {
+            "month":"July",
+            "year":2023,
+            "blood_pressure":{
+               "systolic":{
+                  "value":165,
+                  "levels":"Higher than Average"
+               },
+               "diastolic":{
+                  "value":95,
+                  "levels":"Normal"
+               }
+            },
+            "heart_rate":{
+               "value":71,
+               "levels":"Lower than Average"
+            },
+            "respiratory_rate":{
+               "value":14,
+               "levels":"Normal"
+            },
+            "temperature":{
+               "value":100,
+               "levels":"Normal"
+            }
+         }
+      ],
+    "diagnostic_list": [
+      { "name": "Gastroesophageal Reflux", "description": "Stomach acid flows back into the esophagus.", "status": "Actively being treated" }
+    ],
+    "lab_results": ["Endoscopy Report", "Esophageal Manometry"]
+  },
+  {
+    "name": "Sophia Garcia",
+    "gender": "Female",
+    "age": 24,
+    "image_path": "./src/assets/img/SophiaGarcia.webp",
+    "date_of_birth": "2002-12-05",
+    "phone_number": "(305) 555-0101",
+    "emergency_contact": "(305) 555-0102",
+    "insurance_type": "CareFirst",
+    "diagnosis_history": [
+      {
+        "month": "March",
+        "year": 2024,
+        "blood_pressure": { "systolic": { "value": 110, "levels": "Normal" }, "diastolic": { "value": 70, "levels": "Lower than Average" } },
+        "heart_rate": { "value": 65, "levels": "Lower than Average" },
+        "respiratory_rate": { "value": 14, "levels": "Normal" },
+        "temperature": { "value": 97.8, "levels": "Normal" }
+      }
+    ],
+    "diagnostic_list": [
+      { "name": "Anemia", "description": "Lack of enough healthy red blood cells.", "status": "Under observation" }
+    ],
+    "lab_results": ["Iron Studies", "Ferritin Test", "Complete Blood Count (CBC)"]
+  },
+  {
+    "name": "James Anderson",
+    "gender": "Male",
+    "age": 58,
+    "image_path": "./src/assets/img/JamesAnderson.webp",
+    "date_of_birth": "1968-04-22",
+    "phone_number": "(702) 555-0166",
+    "emergency_contact": "(702) 555-0177",
+    "insurance_type": "United Healthcare",
+    "diagnosis_history": [
+      {
+        "month": "March",
+        "year": 2024,
+        "blood_pressure": { "systolic": { "value": 155, "levels": "Higher than Average" }, "diastolic": { "value": 98, "levels": "Normal" } },
+        "heart_rate": { "value": 88, "levels": "Normal" },
+        "respiratory_rate": { "value": 20, "levels": "Normal" },
+        "temperature": { "value": 99.1, "levels": "Normal" }
+      }
+    ],
+    "diagnostic_list": [
+      { "name": "Sleep Apnea", "description": "Potentially serious sleep disorder.", "status": "Actively being treated" },
+      { "name": "Hyperlipidemia", "description": "High concentration of fats in the blood.", "status": "Under observation" }
+    ],
+    "lab_results": ["Sleep Study", "Lipid Panel", "Glucose Test"]
+  },
+  {
+    "name": "Olivia Moore",
+    "gender": "Female",
+    "age": 35,
+    "image_path": "./src/assets/img/OliviaMoore.webp",
+    "date_of_birth": "1991-10-18",
+    "phone_number": "(206) 555-0144",
+    "emergency_contact": "(206) 555-0133",
+    "insurance_type": "Premera Blue Cross",
+    "diagnosis_history": [
+      {
+        "month": "March",
+        "year": 2024,
+        "blood_pressure": { "systolic": { "value": 122, "levels": "Normal" }, "diastolic": { "value": 80, "levels": "Normal" } },
+        "heart_rate": { "value": 70, "levels": "Normal" },
+        "respiratory_rate": { "value": 16, "levels": "Normal" },
+        "temperature": { "value": 98.6, "levels": "Normal" }
+      }
+    ],
+    "diagnostic_list": [
+      { "name": "Migraine", "description": "Recurrent throbbing headache.", "status": "Untreated" }
+    ],
+    "lab_results": ["CT Brain Scan", "Vision Test"]
+  },
+  {
+    "name": "Roberta Taylor",
+    "gender": "Female",
+    "age": 73,
+    "image_path": "./src/assets/img/RobertaTaylor.webp",
+    "date_of_birth": "1953-06-07",
+    "phone_number": "(212) 555-0199",
+    "emergency_contact": "(212) 555-0188",
+    "insurance_type": "Aetna Silver",
+    "diagnosis_history": [{ 
+            "month":"March",
+            "year":2024,
+            "blood_pressure":{
+               "systolic":{
+                  "value":120,
+                  "levels":"Normal"
+               },
+               "diastolic":{
+                  "value":85,
+                  "levels":"Normal"
+               }
+            },
+            "heart_rate":{
+               "value":79,
+               "levels":"Lower than Average"
+            },
+            "respiratory_rate":{
+               "value":27,
+               "levels":"Normal"
+            },
+            "temperature":{
+               "value":103,
+               "levels":"Higher than Average"
+            }
+         },
+         {
+            "month":"February",
+            "year":2024,
+            "blood_pressure":{
+               "systolic":{
+                  "value":151,
+                  "levels":"Higher than Average"
+               },
+               "diastolic":{
+                  "value":120,
+                  "levels":"Normal"
+               }
+            },
+            "heart_rate":{
+               "value":88,
+               "levels":"Normal"
+            },
+            "respiratory_rate":{
+               "value":27,
+               "levels":"Normal"
+            },
+            "temperature":{
+               "value":99,
+               "levels":"Normal"
+            }
+         },
+         {
+            "month":"January",
+            "year":2024,
+            "blood_pressure":{
+               "systolic":{
+                  "value":168,
+                  "levels":"Higher than Average"
+               },
+               "diastolic":{
+                  "value":77,
+                  "levels":"Lower than Average"
+               }
+            },
+            "heart_rate":{
+               "value":82,
+               "levels":"Normal"
+            },
+            "respiratory_rate":{
+               "value":17,
+               "levels":"Normal"
+            },
+            "temperature":{
+               "value":97,
+               "levels":"Normal"
+            }
+         },
+         {
+            "month":"December",
+            "year":2023,
+            "blood_pressure":{
+               "systolic":{
+                  "value":158,
+                  "levels":"Higher than Average"
+               },
+               "diastolic":{
+                  "value":92,
+                  "levels":"Normal"
+               }
+            },
+            "heart_rate":{
+               "value":60,
+               "levels":"Lower than Average"
+            },
+            "respiratory_rate":{
+               "value":21,
+               "levels":"Normal"
+            },
+            "temperature":{
+               "value":99,
+               "levels":"Normal"
+            }
+         },
+         {
+            "month":"November",
+            "year":2023,
+            "blood_pressure":{
+               "systolic":{
+                  "value":117,
+                  "levels":"Normal"
+               },
+               "diastolic":{
+                  "value":95,
+                  "levels":"Normal"
+               }
+            },
+            "heart_rate":{
+               "value":100,
+               "levels":"Normal"
+            },
+            "respiratory_rate":{
+               "value":21,
+               "levels":"Normal"
+            },
+            "temperature":{
+               "value":103,
+               "levels":"Higher than Average"
+            }
+         },
+         {
+            "month":"October",
+            "year":2023,
+            "blood_pressure":{
+               "systolic":{
+                  "value":115,
+                  "levels":"Normal"
+               },
+               "diastolic":{
+                  "value":80,
+                  "levels":"Lower than Average"
+               }
+            },
+            "heart_rate":{
+               "value":63,
+               "levels":"Lower than Average"
+            },
+            "respiratory_rate":{
+               "value":14,
+               "levels":"Normal"
+            },
+            "temperature":{
+               "value":100,
+               "levels":"Normal"
+            }
+         },
+         {
+            "month":"September",
+            "year":2023,
+            "blood_pressure":{
+               "systolic":{
+                  "value":133,
+                  "levels":"Higher than Average"
+               },
+               "diastolic":{
+                  "value":68,
+                  "levels":"Lower than Average"
+               }
+            },
+            "heart_rate":{
+               "value":91,
+               "levels":"Normal"
+            },
+            "respiratory_rate":{
+               "value":13,
+               "levels":"Normal"
+            },
+            "temperature":{
+               "value":99,
+               "levels":"Normal"
+            }
+         },
+         {
+            "month":"August",
+            "year":2023,
+            "blood_pressure":{
+               "systolic":{
+                  "value":149,
+                  "levels":"Higher than Average"
+               },
+               "diastolic":{
+                  "value":70,
+                  "levels":"Lower than Average"
+               }
+            },
+            "heart_rate":{
+               "value":69,
+               "levels":"Lower than Average"
+            },
+            "respiratory_rate":{
+               "value":14,
+               "levels":"Normal"
+            },
+            "temperature":{
+               "value":100,
+               "levels":"Normal"
+            }
+         },
+         {
+            "month":"July",
+            "year":2023,
+            "blood_pressure":{
+               "systolic":{
+                  "value":165,
+                  "levels":"Higher than Average"
+               },
+               "diastolic":{
+                  "value":95,
+                  "levels":"Normal"
+               }
+            },
+            "heart_rate":{
+               "value":71,
+               "levels":"Lower than Average"
+            },
+            "respiratory_rate":{
+               "value":14,
+               "levels":"Normal"
+            },
+            "temperature":{
+               "value":100,
+               "levels":"Normal"
+            }
+         }
+      ],
+    "diagnostic_list": [
+      { "name": "Cataracts", "description": "Clouding of the lens in the eye.", "status": "Under observation" },
+      { "name": "Atrial Fibrillation", "description": "Irregular, often rapid heart rate.", "status": "Actively being treated" }
+    ],
+    "lab_results": ["EKG", "Holter Monitor", "Ophthalmology Exam"]
+  },
+  {
+    "name": "Isabella Hall",
+    "gender": "Female",
+    "age": 44,
+    "image_path": "./src/assets/img/IsabellaHall.webp",
+    "date_of_birth": "1982-02-14",
+    "phone_number": "(503) 555-0123",
+    "emergency_contact": "(503) 555-0145",
+    "insurance_type": "Kaiser Permanente",
+    "diagnosis_history": [
+      {
+        "month": "March",
+        "year": 2024,
+        "blood_pressure": { "systolic": { "value": 128, "levels": "Normal" }, "diastolic": { "value": 84, "levels": "Normal" } },
+        "heart_rate": { "value": 78, "levels": "Normal" },
+        "respiratory_rate": { "value": 18, "levels": "Normal" },
+        "temperature": { "value": 98.2, "levels": "Normal" }
+      }
+    ],
+    "diagnostic_list": [
+      { "name": "Rheumatoid Arthritis", "description": "Autoimmune disorder affecting joints.", "status": "Actively being treated" }
+    ],
+    "lab_results": ["C-Reactive Protein (CRP)", "RF Factor Test", "X-Ray Hands"]
+  },
+  {
+    "name": "Williama Scott",
+    "gender": "Female",
+    "age": 19,
+    "image_path": "./src/assets/img/WilliamaScott.webp",
+    "date_of_birth": "2007-11-11",
+    "phone_number": "(619) 555-0177",
+    "emergency_contact": "(619) 555-0188",
+    "insurance_type": "Molina Healthcare",
+    "diagnosis_history": [
+      {
+        "month": "March",
+        "year": 2024,
+        "blood_pressure": { "systolic": { "value": 115, "levels": "Normal" }, "diastolic": { "value": 75, "levels": "Normal" } },
+        "heart_rate": { "value": 92, "levels": "Normal" },
+        "respiratory_rate": { "value": 16, "levels": "Normal" },
+        "temperature": { "value": 102.5, "levels": "Higher than Average" }
+      }
+    ],
+    "diagnostic_list": [
+      { "name": "Influenza", "description": "Viral infection that attacks respiratory system.", "status": "Actively being treated" }
+    ],
+    "lab_results": ["Rapid Flu Test", "Sputum Culture"]
+  }
+]

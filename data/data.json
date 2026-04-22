@@ -1,0 +1,53 @@
+{
+  "site_nav": [
+    { "tag": "Home", "url": "/" },
+    { "tag": "About", "url": "/about" },
+    { "tag": "Stuff", "url": "/stuff" }
+  ],
+  "site_profiles": [
+    {
+      "name": "Jason",
+      "gender": "Male",
+      "race": "Human",
+      "class": "Warrior",
+      "image_file_name": "./src/assets/img/jason.jpg",
+      "biography": "<p>Jason is a hardened human warrior forged in border wars no one remembers and no one dares retell correctly. Once an ordinary soldier, he earned his name in blood-soaked skirmishes where retreat wasn't an option and mercy was a rumor.</p><p>He fights with a battered blade that's been repaired more times than it should still work, and armor held together by stubbornness more than metal. Jason doesn't chase glory—he survives long enough to finish the job, then disappears before anyone can thank him or blame him.</p><p>Quiet in speech, loud in consequence. If Jason shows up, something already went wrong… and something is about to end.</p>",
+      "attributes": {
+        "Strength": 10,
+        "Speed": 10,
+        "Intelligence": 2,
+        "Charisma": 5,
+        "Spirit": 5,
+        "Health": 100
+      },
+      "skills": [
+        "Double Attack",
+        "Lunging Strike",
+        "Spinning Stike",
+        "Leaping Strike"
+      ]
+    },
+    {
+      "name": "Diana",
+      "gender": "Female",
+      "race": "Elf",
+      "class": "Wizard",
+      "biography": "<p>Diana is an elven wizard from the high canopies of Larethyl, where time moves slower and secrets are treated like currency. Trained in ancient arcane schools carved into living trees, she mastered spellcraft long before most mortals learn to read.</p><p>Unlike many of her kind, Diana doesn't hide behind detached elegance—she studies magic like a weapon, precise and deliberate. Her spells are known for their unsettling balance of beauty and devastation, often leaving both allies and enemies unsure of what exactly just happened.</p><p>She left her homeland after discovering a forbidden pattern in the ley lines—something that shouldn't exist, and something that keeps following her no matter how far she travels. Now she wanders between realms, collecting answers, breaking rules, and occasionally reality itself.</p>",
+      "image_file_name": "./src/assets/img/diana.jpg",
+      "attributes": {
+        "Strength": 2,
+        "Speed": 5,
+        "Intelligence": 2,
+        "Charisma": 10,
+        "Spirit": 10,
+        "Health": 100
+      },
+      "skills": [
+        "Fire Ball",
+        "Lightening Bolt",
+        "Confuse",
+        "Teleport"
+      ]
+    }
+  ]
+}
