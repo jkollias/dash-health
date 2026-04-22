@@ -10,8 +10,8 @@ const useData = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await fetch("./data/data.json");
-        const patientsRes = await fetch("./data/patients.json");
+        const res = await fetch("/data/data.json");
+        const patientsRes = await fetch("/data/patients.json");
         if (!res.ok) throw new Error("Request failed");
         if (!patientsRes.ok) throw new Error("Request failed");
         const data = await res.json();
