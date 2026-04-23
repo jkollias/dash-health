@@ -8,11 +8,11 @@ function ProfileInfo({patient}) {
          <figcaption className="patients-info__name __h1">{patient.name}</figcaption>
       </figure>
       
-      <div className="patients-info__dob">Date Of Birth<br/><strong>{patient.date_of_birth}</strong></div>
-      <div className="patients-info__gender">Gender<br/><strong>{patient.gender}</strong></div>
-      <div className="patients-info__contact-info">Contact Info<br/><strong>{patient.emergency_contact}</strong></div>
-      <div className="patients-info__emergency-info">Emergency Info<br/><strong>{patient.emergency_contact}</strong></div>
-      <div className="patients-info__insurance">Insurance Provider Info<br/><strong>{patient.insurance_type}</strong></div>
+      <div className="patients-info__dob">Dob: <strong>{patient.date_of_birth}</strong></div>
+      <div className="patients-info__gender">Gender: <strong>{patient.gender}</strong></div>
+      <div className="patients-info__contact-info">Contact:<br/> <strong>{patient.emergency_contact}</strong></div>
+      <div className="patients-info__emergency-info">Emergency:<br/> <strong>{patient.emergency_contact}</strong></div>
+      <div className="patients-info__insurance">Ins: <strong>{patient.insurance_type}</strong></div>
     </div>
      
   )

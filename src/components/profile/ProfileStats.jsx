@@ -30,7 +30,7 @@ function ProfileStats({ patient }) {
     }
 
     chartInstance.current = new Chart(ctx, {
-      type: "line", 
+      type: "bar", 
       data: {
         labels,
         datasets: [
@@ -54,6 +54,7 @@ function ProfileStats({ patient }) {
       },
       options: {
         responsive: true,
+        maintainAspectRatio: true, 
         scales: {
           y: {
             beginAtZero: false,
