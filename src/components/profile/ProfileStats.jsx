@@ -36,16 +36,16 @@ function ProfileStats({ patient }) {
         datasets: [
           {
             label: "Systolic",
-            borderColor: "#ff0000",
-            backgroundColor: "#660000",
+            borderColor: "#660000",
+            backgroundColor: "#dd0000",
             data:  systolicData,
             borderWidth: 2,
             tension: 0.5,
           },
           {
             label: "Diastolic",
-            borderColor: "#00ff00",
-            backgroundColor: "#006600",
+            borderColor: "#56726e",
+            backgroundColor: "#24786c",
             data: diastolicData,
             borderWidth: 2,
             tension: 0.5,
@@ -74,10 +74,16 @@ function ProfileStats({ patient }) {
   if (history.length < 2) return <p className="__error-message">Not enough data</p>;
 
   return (
-    <div className="profile-chart">
-      <h2 className="__h1">History</h2>
-      <canvas ref={chartRef}></canvas>
-    </div>
+    <>
+      <div className="profile-chart">
+        <h2 className="__h1">History</h2>
+        <canvas ref={chartRef}></canvas>
+      </div>
+      <div className="diagnostic-history">
+          
+      </div>
+    </>
+    
   );
 }
 
