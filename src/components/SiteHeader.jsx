@@ -3,13 +3,16 @@ import logo from "../assets/img/dash-health-logo.webp"
 
 function SiteHeader() {
   return (
-    <div className="site-header__grid">
-      <div className="site-header__logo">
-        <img src={logo} width="100" height="15" alt="Dash Health" className="site-logo" />
+    <header className="site-header">
+      <div className="site-header__grid">
+          <div className="site-header__logo">
+            <img src={logo} width="100" height="15" alt="Dash Health" className="site-logo" />
+          </div>
+          <div className="site-header__navigation"><SiteNavigation/></div>
+          {/* <div className="site-header__user-profile-actions">Actions</div> */}
       </div>
-      <div className="site-header__navigation"><SiteNavigation/></div>
-      <div className="site-header__user-profile-actions">Actions</div>
-    </div>
+    </header>
+    
   )
 }
 export default SiteHeader

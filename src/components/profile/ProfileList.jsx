@@ -10,8 +10,8 @@ function ProfileList({ onSelect, selectedPatient }) {
     }
   }, [patients, onSelect]);
 
-  if (loading) return <p>Loading...</p>;
-  if (error) return <p>Something went wrong.</p>;
+  if (loading) return <p className="__message loading-message">Loading...</p>;
+  if (error) return <p className="__message error-message">Something went wrong.</p>;
   
   return (
     <> 
@@ -27,7 +27,7 @@ function ProfileList({ onSelect, selectedPatient }) {
                   selectedPatient?.name === patient.name ? "active_profile-btn" : ""
                 }`}
                 onClick={()=> onSelect(patient)}>
-                <img src={patient.image_path} alt={patient.name} width="125" height="125" />
+                <img src={patient.image_path} alt={patient.name} width="100" height="100" className="select-profile-btn__img" />
                 <div className="select-profile-btn__name">{patient.name}</div>
               </button>
             </li>
