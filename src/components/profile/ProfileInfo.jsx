@@ -4,7 +4,7 @@ function ProfileInfo({patient}) {
   return (
     <div className="patients-info"> 
       <figure className="patients-info__image">
-        <div><img src={patient.image_path} alt={patient.name} /></div>
+        <div><img src={patient.image_path} alt={patient.name} width="260" height="260" /></div>
          <figcaption className="patients-info__name __h1">{patient.name}</figcaption>
       </figure>
       

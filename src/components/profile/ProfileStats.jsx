@@ -8,6 +8,7 @@ function ProfileStats({ patient }) {
   const displayData = history.length > 4 ? history.slice(-4) : history;
   const dataReversed = [...displayData].reverse();
   const hasEnoughData = displayData.length >= 3;
+  const diagnosis = patient?.diagnostic_list || [];
   
   useEffect(() => {
     if (!hasEnoughData || !chartRef.current) return;
@@ -23,6 +24,7 @@ function ProfileStats({ patient }) {
     const diastolicData = dataReversed.map(
       (entry) => entry?.blood_pressure?.diastolic?.value
     );
+    
 
     // destroy previous chart (VERY important)
     if (chartInstance.current) {
@@ -73,6 +75,7 @@ function ProfileStats({ patient }) {
 
   if (!patient) return <p>Select a patient</p>;
   if (history.length < 2) return <p className="__error-message">Not enough data</p>;
+ 
 
   return (
     <>
@@ -81,7 +84,24 @@ function ProfileStats({ patient }) {
         <canvas ref={chartRef}></canvas>
       </div>
       <div className="diagnostic-history">
-          
+          <h2 className="__h1">Diagnosis</h2>
+          <div className="diagnosis-list__grid">
+            <div className="diagnosis-list__grid__header">
+              <div className="diagnosis-list__grid__cell">Problem/Diagnosis</div>
+              <div className="diagnosis-list__grid__cell">Description</div>
+              <div className="diagnosis-list__grid__cell">Status</div>
+            </div>
+              <div className="diagnosis-list__grid__body">
+                {/* 3. FIX: Properly mapping the diagnosis list */}
+                {diagnosis.map((item, index) => (
+                  <div key={index} className="diagnosis-list__grid__row">
+                    <div className="cell">{item.name}</div>
+                    <div className="cell">{item.description}</div>
+                    <div className="cell">{item.status}</div>
+                  </div>
+                ))}
+              </div>
+          </div> 
       </div>
     </>
     
