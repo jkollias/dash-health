@@ -1,8 +1,10 @@
 {
   "site_nav": [
-    { "tag": "Home", "url": "/" },
-    { "tag": "About", "url": "/about" },
-    { "tag": "Stuff", "url": "/stuff" }
+    { "tag": "Dashboard", "url": "/" },
+    { "tag": "Patients", "url": "/" },
+    { "tag": "Analytics", "url": "/" },
+    { "tag": "Reports", "url": "/" },
+    { "tag": "Settings", "url": "/" }
   ],
   "site_profiles": [
     {

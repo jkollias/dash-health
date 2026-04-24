@@ -10,6 +10,8 @@
     --lg-spacing: 50px; 
     --mobile-menu-bg: #56726e; 
     --mobile-menu-link-color: #fff;
+    --desktop-menu-bg: #fff;
+    --desktop-menu-link-color: #000;
     --border: 1px solid #ccc;
     --heading-font: Georgia;
     --panel-bg: #fff;
@@ -38,8 +40,7 @@ body{
     background-color: var(--body-bg); 
     background-image: var(--body-bg--gradient);
     background-repeat: no-repeat; 
-    line-height: 1.25;
-    height: 100vh; 
+    line-height: 1.25; 
 }
 
 .__panel{
@@ -83,13 +84,13 @@ body{
     color: var(--panel-color);
     padding: var(--sm-spacing);
     gap: var(--sm-spacing);
-    justify-content: stetch;
+    justify-content: stretch;
     width: 100%;
 }
 
 @media screen and (min-width: 1000px){
    .site-header__grid{  
-        max-width: var(--tablet-container);
+        max-width: var(--desktop-container-width);
         margin-inline: auto;
         padding-inline: 30px; 
    } 
@@ -102,6 +103,9 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+@media screen and (min-width: 1000px){
+    .site-header{ height: auto }
 }
 
 .site-logo{
@@ -148,14 +152,16 @@ body{
     grid-template-columns: 1fr;
     gap: var(--spacing);
 }
+.site-navigation__link{
+    display: block;
+    text-decoration: none;
+}
 
 @media screen and (max-width: 999px){
-    .site-navigation__link{
-        display: block;
+    .site-navigation__link{ 
         padding: var(--spacing);
         color: var(--mobile-menu-link-color);
         font-size: 24px;
-        text-decoration: none;
         margin-top: var(--spacing);
     }
 }
@@ -176,15 +182,12 @@ body{
         display: flex;  
         justify-content: end;
     } 
-    .site-navigation__link{
-        display: block;
+    .site-navigation__link{ 
         padding: var(--sm-spacing);
         color: var(--desktop-menu-link-color);
-        font-size: 15px;
-        text-decoration: none; 
+        font-size: 15px; 
     }
 }
-
 
 .site-navigation__open-btn__label{
     display: none;
@@ -223,11 +226,13 @@ body{
 @media screen and (min-width: 1000px){
     .site-body__grid{ 
         grid-template-areas: "list stats info ";
-        grid-template-columns: 350px 1fr 350px;
+        grid-template-columns: 300px 1fr 300px;
         padding-inline: var(--spacing);
         justify-content: space-between;
         gap: var(--spacing);
         margin-top: var(--lg-spacing);
+        max-width: var(--desktop-container-width);
+        margin-inline: auto;
     }
 }
 
@@ -260,7 +265,9 @@ body{
 @media screen and (max-width: 749px){
    .site-body__grid__profile-stats,
    .site-body__grid__profile-info{ 
-        max-width: 600px;
+        max-width: 370px;
+        width: 100%;
+        margin-inline: var(--sm-spacing);
         justify-self: center 
    } 
 }
@@ -342,7 +349,7 @@ body{
 }
 
 .select-profile-btn__img{
-    width: 105px;
+    width: 125px;
     height: auto;
 }
 
@@ -394,15 +401,15 @@ body{
 
 .select-profile-btn__name{
     padding: var(--sm-spacing);
-    font-size: 10px;
+    font-size: 16px;
 }
 
-@media screen and (min-width: 750px){
+/* @media screen and (min-width: 750px){
    .select-profile-btn__name{
         padding: var(--sm-spacing);
         font-size: 16px;
     }     
-}
+} */
 
 @media screen and (min-width: 1000px){
    .select-profile-btn__name{
@@ -413,17 +420,18 @@ body{
 
 /* Info */
 .patients-info{
-    font-size: 12px;
+    font-size: 15px;
     text-align: left;
     max-width: 300px;
     display: grid;
     gap: var(--sm-spacing);
-    grid-template-columns: 150px 50px 100px;
+    grid-template-columns: 150px 150px;
     grid-template-areas: 
-        "image gender dob" 
-        "image contact contact"
-        "image emergency emergency"
-        "image insurance insurance" 
+        "image gender " 
+        "image dob "  
+        "image contact"
+        "image emergency"
+        "image insurance" 
     ;
 }
 

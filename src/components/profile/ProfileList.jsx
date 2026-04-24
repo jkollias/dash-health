@@ -27,7 +27,7 @@ function ProfileList({ onSelect, selectedPatient }) {
                   selectedPatient?.name === patient.name ? "active_profile-btn" : ""
                 }`}
                 onClick={()=> onSelect(patient)}>
-                <img src={patient.image_path} alt={patient.name} width="100" height="100" className="select-profile-btn__img" />
+                <img src={patient.image_path} alt={`Select profile for ${patient.name}`} width="100" height="100" className="select-profile-btn__img" />
                 <div className="select-profile-btn__name">{patient.name}</div>
               </button>
             </li>

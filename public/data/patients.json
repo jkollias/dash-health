@@ -335,6 +335,39 @@
         "heart_rate": { "value": 82, "levels": "Normal" },
         "respiratory_rate": { "value": 22, "levels": "Normal" },
         "temperature": { "value": 98.9, "levels": "Normal" }
+      },
+      {
+         "month": "April",
+         "year": 2022,
+         "blood_pressure": {
+            "systolic": { "value": 263, "levels": "Higher than Average" },
+            "diastolic": { "value": 85, "levels": "Normal" }
+         },
+         "heart_rate": { "value": 79, "levels": "Lower than Average" },
+         "respiratory_rate": { "value": 27, "levels": "Normal" },
+         "temperature": { "value": 103, "levels": "Higher than Average" }
+      },
+      {
+         "month": "Dec",
+         "year": 2021,
+         "blood_pressure": {
+            "systolic": { "value": 263, "levels": "Higher than Average" },
+            "diastolic": { "value": 85, "levels": "Normal" }
+         },
+         "heart_rate": { "value": 79, "levels": "Lower than Average" },
+         "respiratory_rate": { "value": 27, "levels": "Normal" },
+         "temperature": { "value": 103, "levels": "Higher than Average" }
+      },
+      {
+         "month": "June",
+         "year": 2021,
+         "blood_pressure": {
+            "systolic": { "value": 263, "levels": "Higher than Average" },
+            "diastolic": { "value": 85, "levels": "Normal" }
+         },
+         "heart_rate": { "value": 79, "levels": "Lower than Average" },
+         "respiratory_rate": { "value": 27, "levels": "Normal" },
+         "temperature": { "value": 103, "levels": "Higher than Average" }
       }
     ],
     "diagnostic_list": [
@@ -609,7 +642,85 @@
         "heart_rate": { "value": 65, "levels": "Lower than Average" },
         "respiratory_rate": { "value": 14, "levels": "Normal" },
         "temperature": { "value": 97.8, "levels": "Normal" }
-      }
+      },
+      {
+            "month":"December",
+            "year":2023,
+            "blood_pressure":{
+               "systolic":{
+                  "value":158,
+                  "levels":"Higher than Average"
+               },
+               "diastolic":{
+                  "value":92,
+                  "levels":"Normal"
+               }
+            },
+            "heart_rate":{
+               "value":60,
+               "levels":"Lower than Average"
+            },
+            "respiratory_rate":{
+               "value":21,
+               "levels":"Normal"
+            },
+            "temperature":{
+               "value":99,
+               "levels":"Normal"
+            }
+         },
+         {
+            "month":"October",
+            "year":2023,
+            "blood_pressure":{
+               "systolic":{
+                  "value":158,
+                  "levels":"Higher than Average"
+               },
+               "diastolic":{
+                  "value":92,
+                  "levels":"Normal"
+               }
+            },
+            "heart_rate":{
+               "value":60,
+               "levels":"Lower than Average"
+            },
+            "respiratory_rate":{
+               "value":21,
+               "levels":"Normal"
+            },
+            "temperature":{
+               "value":99,
+               "levels":"Normal"
+            }
+         },
+         {
+            "month":"November",
+            "year":2023,
+            "blood_pressure":{
+               "systolic":{
+                  "value":158,
+                  "levels":"Higher than Average"
+               },
+               "diastolic":{
+                  "value":92,
+                  "levels":"Normal"
+               }
+            },
+            "heart_rate":{
+               "value":60,
+               "levels":"Lower than Average"
+            },
+            "respiratory_rate":{
+               "value":21,
+               "levels":"Normal"
+            },
+            "temperature":{
+               "value":99,
+               "levels":"Normal"
+            }
+         }
     ],
     "diagnostic_list": [
       { "name": "Anemia", "description": "Lack of enough healthy red blood cells.", "status": "Under observation" }
@@ -633,7 +744,85 @@
         "heart_rate": { "value": 88, "levels": "Normal" },
         "respiratory_rate": { "value": 20, "levels": "Normal" },
         "temperature": { "value": 99.1, "levels": "Normal" }
-      }
+      },
+      {
+            "month":"January",
+            "year":2024,
+            "blood_pressure":{
+               "systolic":{
+                  "value":158,
+                  "levels":"Higher than Average"
+               },
+               "diastolic":{
+                  "value":92,
+                  "levels":"Normal"
+               }
+            },
+            "heart_rate":{
+               "value":60,
+               "levels":"Lower than Average"
+            },
+            "respiratory_rate":{
+               "value":21,
+               "levels":"Normal"
+            },
+            "temperature":{
+               "value":99,
+               "levels":"Normal"
+            }
+         },
+         {
+            "month":"December",
+            "year":2023,
+            "blood_pressure":{
+               "systolic":{
+                  "value":158,
+                  "levels":"Higher than Average"
+               },
+               "diastolic":{
+                  "value":92,
+                  "levels":"Normal"
+               }
+            },
+            "heart_rate":{
+               "value":60,
+               "levels":"Lower than Average"
+            },
+            "respiratory_rate":{
+               "value":21,
+               "levels":"Normal"
+            },
+            "temperature":{
+               "value":99,
+               "levels":"Normal"
+            }
+         },
+         {
+            "month":"November",
+            "year":2023,
+            "blood_pressure":{
+               "systolic":{
+                  "value":158,
+                  "levels":"Higher than Average"
+               },
+               "diastolic":{
+                  "value":92,
+                  "levels":"Normal"
+               }
+            },
+            "heart_rate":{
+               "value":60,
+               "levels":"Lower than Average"
+            },
+            "respiratory_rate":{
+               "value":21,
+               "levels":"Normal"
+            },
+            "temperature":{
+               "value":99,
+               "levels":"Normal"
+            }
+         }
     ],
     "diagnostic_list": [
       { "name": "Sleep Apnea", "description": "Potentially serious sleep disorder.", "status": "Actively being treated" },
@@ -652,7 +841,31 @@
     "insurance_type": "Premera Blue Cross",
     "diagnosis_history": [
       {
-        "month": "March",
+        "month": "April",
+        "year": 2024,
+        "blood_pressure": { "systolic": { "value": 122, "levels": "Normal" }, "diastolic": { "value": 80, "levels": "Normal" } },
+        "heart_rate": { "value": 70, "levels": "Normal" },
+        "respiratory_rate": { "value": 16, "levels": "Normal" },
+        "temperature": { "value": 98.6, "levels": "Normal" }
+      },
+      {
+        "month": "May",
+        "year": 2024,
+        "blood_pressure": { "systolic": { "value": 122, "levels": "Normal" }, "diastolic": { "value": 80, "levels": "Normal" } },
+        "heart_rate": { "value": 70, "levels": "Normal" },
+        "respiratory_rate": { "value": 16, "levels": "Normal" },
+        "temperature": { "value": 98.6, "levels": "Normal" }
+      },
+      {
+        "month": "June",
+        "year": 2024,
+        "blood_pressure": { "systolic": { "value": 122, "levels": "Normal" }, "diastolic": { "value": 80, "levels": "Normal" } },
+        "heart_rate": { "value": 70, "levels": "Normal" },
+        "respiratory_rate": { "value": 16, "levels": "Normal" },
+        "temperature": { "value": 98.6, "levels": "Normal" }
+      },
+      {
+        "month": "July",
         "year": 2024,
         "blood_pressure": { "systolic": { "value": 122, "levels": "Normal" }, "diastolic": { "value": 80, "levels": "Normal" } },
         "heart_rate": { "value": 70, "levels": "Normal" },
@@ -926,12 +1139,36 @@
     "insurance_type": "Kaiser Permanente",
     "diagnosis_history": [
       {
-        "month": "March",
+        "month": "April",
         "year": 2024,
-        "blood_pressure": { "systolic": { "value": 128, "levels": "Normal" }, "diastolic": { "value": 84, "levels": "Normal" } },
-        "heart_rate": { "value": 78, "levels": "Normal" },
-        "respiratory_rate": { "value": 18, "levels": "Normal" },
-        "temperature": { "value": 98.2, "levels": "Normal" }
+        "blood_pressure": { "systolic": { "value": 122, "levels": "Normal" }, "diastolic": { "value": 80, "levels": "Normal" } },
+        "heart_rate": { "value": 70, "levels": "Normal" },
+        "respiratory_rate": { "value": 16, "levels": "Normal" },
+        "temperature": { "value": 98.6, "levels": "Normal" }
+      },
+      {
+        "month": "May",
+        "year": 2024,
+        "blood_pressure": { "systolic": { "value": 122, "levels": "Normal" }, "diastolic": { "value": 80, "levels": "Normal" } },
+        "heart_rate": { "value": 70, "levels": "Normal" },
+        "respiratory_rate": { "value": 16, "levels": "Normal" },
+        "temperature": { "value": 98.6, "levels": "Normal" }
+      },
+      {
+        "month": "June",
+        "year": 2024,
+        "blood_pressure": { "systolic": { "value": 122, "levels": "Normal" }, "diastolic": { "value": 80, "levels": "Normal" } },
+        "heart_rate": { "value": 70, "levels": "Normal" },
+        "respiratory_rate": { "value": 16, "levels": "Normal" },
+        "temperature": { "value": 98.6, "levels": "Normal" }
+      },
+      {
+        "month": "July",
+        "year": 2024,
+        "blood_pressure": { "systolic": { "value": 122, "levels": "Normal" }, "diastolic": { "value": 80, "levels": "Normal" } },
+        "heart_rate": { "value": 70, "levels": "Normal" },
+        "respiratory_rate": { "value": 16, "levels": "Normal" },
+        "temperature": { "value": 98.6, "levels": "Normal" }
       }
     ],
     "diagnostic_list": [
@@ -950,12 +1187,36 @@
     "insurance_type": "Molina Healthcare",
     "diagnosis_history": [
       {
-        "month": "March",
+        "month": "April",
         "year": 2024,
-        "blood_pressure": { "systolic": { "value": 115, "levels": "Normal" }, "diastolic": { "value": 75, "levels": "Normal" } },
-        "heart_rate": { "value": 92, "levels": "Normal" },
+        "blood_pressure": { "systolic": { "value": 122, "levels": "Normal" }, "diastolic": { "value": 80, "levels": "Normal" } },
+        "heart_rate": { "value": 70, "levels": "Normal" },
         "respiratory_rate": { "value": 16, "levels": "Normal" },
-        "temperature": { "value": 102.5, "levels": "Higher than Average" }
+        "temperature": { "value": 98.6, "levels": "Normal" }
+      },
+      {
+        "month": "May",
+        "year": 2024,
+        "blood_pressure": { "systolic": { "value": 122, "levels": "Normal" }, "diastolic": { "value": 80, "levels": "Normal" } },
+        "heart_rate": { "value": 70, "levels": "Normal" },
+        "respiratory_rate": { "value": 16, "levels": "Normal" },
+        "temperature": { "value": 98.6, "levels": "Normal" }
+      },
+      {
+        "month": "June",
+        "year": 2024,
+        "blood_pressure": { "systolic": { "value": 122, "levels": "Normal" }, "diastolic": { "value": 80, "levels": "Normal" } },
+        "heart_rate": { "value": 70, "levels": "Normal" },
+        "respiratory_rate": { "value": 16, "levels": "Normal" },
+        "temperature": { "value": 98.6, "levels": "Normal" }
+      },
+      {
+        "month": "July",
+        "year": 2024,
+        "blood_pressure": { "systolic": { "value": 122, "levels": "Normal" }, "diastolic": { "value": 80, "levels": "Normal" } },
+        "heart_rate": { "value": 70, "levels": "Normal" },
+        "respiratory_rate": { "value": 16, "levels": "Normal" },
+        "temperature": { "value": 98.6, "levels": "Normal" }
       }
     ],
     "diagnostic_list": [
