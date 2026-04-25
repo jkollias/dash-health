@@ -56,7 +56,7 @@ function ProfileStats({ patient }) {
       },
       options: {
         responsive: true,
-        maintainAspectRatio: true, 
+        maintainAspectRatio: false, 
         scales: {
           y: {
             beginAtZero: false,
@@ -81,7 +81,9 @@ function ProfileStats({ patient }) {
     <>
       <div className="profile-chart">
         <h2 className="__h1">History</h2>
-        <canvas ref={chartRef}></canvas>
+        <div className="profile-chart-wrapper">
+          <canvas ref={chartRef}></canvas>
+        </div>
       </div>
       <div className="diagnostic-history">
           <h2 className="__h1">Diagnosis</h2>
