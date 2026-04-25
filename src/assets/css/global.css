@@ -13,7 +13,7 @@
     --desktop-menu-bg: #fff;
     --desktop-menu-link-color: #000;
     --border: 1px solid #ccc;
-    --heading-font: Georgia;
+    --heading-font: var(--body-font);
     --panel-bg: #fff;
     --panel-color: #000;
     --panel-radius: 10px;
@@ -75,6 +75,10 @@ body{
     font-size: var(--h1-size);
     line-height: 1.1;
     color: var(--h-color);
+}
+
+.__no-y-scroll{
+    overflow-y: hidden;
 }
  
 /* Main Grids */ 
