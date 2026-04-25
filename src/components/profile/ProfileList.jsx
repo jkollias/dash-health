@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import useData from "../../hooks/useData"
+import useData from "../../hooks/useData"; 
 
 function ProfileList({ onSelect, selectedPatient }) {
   const {patients, loading, error} = useData();
@@ -27,7 +27,7 @@ function ProfileList({ onSelect, selectedPatient }) {
                   selectedPatient?.name === patient.name ? "active_profile-btn" : ""
                 }`}
                 onClick={()=> onSelect(patient)}>
-                <img src={patient.image_path} alt={`Select profile for ${patient.name}`} width="100" height="100" className="select-profile-btn__img" />
+                <img src={patient.image_thumb_path} alt={`Select profile for ${patient.name}`} width="150" height="150" className="select-profile-btn__img" />
                 <div className="select-profile-btn__name">{patient.name}</div>
               </button>
             </li>
