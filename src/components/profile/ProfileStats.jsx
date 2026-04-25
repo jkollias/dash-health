@@ -38,16 +38,16 @@ function ProfileStats({ patient }) {
         datasets: [
           {
             label: "Systolic",
-            borderColor: "#660000",
-            backgroundColor: "#dd0000",
+            borderColor: "#ff6b6b",
+            backgroundColor: "#ff6b6b",
             data:  systolicData,
             borderWidth: 2,
             tension: 0.5,
           },
           {
             label: "Diastolic",
-            borderColor: "#56726e",
-            backgroundColor: "#24786c",
+            borderColor: "#2d2d2d",
+            backgroundColor: "#2d2d2d",
             data: diastolicData,
             borderWidth: 2,
             tension: 0.5,
