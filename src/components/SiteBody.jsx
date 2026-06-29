@@ -7,6 +7,7 @@ function SiteBody() {
   const [selectedPatient, setSelectedPatient] = useState(null);
   
   return ( 
+    <main>
       <div className="site-body__grid">
           <div className="__panel site-body__grid__profile-list ">
             <ProfileList onSelect={setSelectedPatient} selectedPatient={selectedPatient} />
@@ -18,6 +19,8 @@ function SiteBody() {
             <ProfileInfo patient={selectedPatient} />
           </div>
       </div> 
+    </main>
+      
   )
 }
 export default SiteBody

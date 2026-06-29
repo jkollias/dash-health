@@ -146,6 +146,7 @@ body{
     .site-navigation__nav[aria-hidden="true"]{ 
         transform: translateX(100vw);  
         transition: transform .25s;
+        visibility: hidden;
     }
 }
 
@@ -492,10 +493,6 @@ body{
 
 .diagnostic-history{
     margin-top: var(--lg-spacing);
-}
-
-.diagnosis-list__grid{
-
 }
 
 .diagnosis-list__grid__header{
