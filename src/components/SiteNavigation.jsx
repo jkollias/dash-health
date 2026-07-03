@@ -1,7 +1,8 @@
 import useData from "../hooks/useData"
 import { useEffect, useState,  useRef, useCallback } from "react"
 import MenuIcon from "@mui/icons-material/Menu";
-import CloseIcon from "@mui/icons-material/Close"; 
+import CloseIcon from "@mui/icons-material/Close";
+ 
 
 function SiteNavigation() {
    const { siteNavLinks, loading, error } = useData();

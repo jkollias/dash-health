@@ -1,9 +1,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Asap:wght@400;600;700&display=swap');
 
-:root{
+:root{ 
     --body-font: 'Asap', sans-serif; 
-    --body-bg--gradient: linear-gradient(to bottom, #cbdeed 0%, #b2c2ce 100%);
     --body-bg: #dff1fe ;
     --sm-spacing: 10px;
     --spacing: 20px;
@@ -19,11 +18,62 @@
     --panel-radius: 10px;
     --h1-size: 18px;
     --h-color: #56726e;
-    --site-header-colums: 200px auto ;
-    --site-header-colums-tablet: 400px auto ;
+    --site-header-colums: 200px auto 80px;
+    --site-header-colums-tablet: 400px auto 80px;
     --tablet-container-width: 950px;
     --desktop-container-width: 1200px;
 } 
+
+[data-theme="dark"] {
+    --body-bg: #16191b ;
+    --desktop-menu-bg: #000;
+    --desktop-menu-link-color: #fff;
+    --border: 1px solid #333;
+    --panel-bg: #000;
+    --panel-color:  #fff;
+    --h-color: #d1f7f1;
+    --mobile-menu-bg: var(--body-bg); 
+    --mobile-menu-link-color: #fff;
+    .site-logo{
+        filter:invert(100);
+    }
+    .profile-chart-wrapper{
+        background-color: #fff;
+    }
+    .toggle-theme-btn{
+        color: #000;
+        background-color: #fff;
+    }
+    .site-navigation__open-btn{
+        color: #fff;
+    }
+    
+}
+
+
+
+/* Respect OS preference by default, before user picks */
+@media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+        [data-theme="dark"] {
+            --body-bg: #16191b ;
+            --desktop-menu-bg: #000;
+            --desktop-menu-link-color: #fff;
+            --border: 1px solid #333;
+            --panel-bg: #000;
+            --panel-color:  #fff;
+            --h-color: #d1f7f1;
+        } 
+        .profile-chart-wrapper{
+            background-color: #fff;
+        }
+        .toggle-theme-btn{
+            color: #000;
+            background-color: #fff;
+        }
+    }
+}
+
 
 @media screen and (min-width: 750px){
     :root{--h1-size: 24px}
@@ -37,13 +87,10 @@
 
 body{
     font-family: var(--body-font);
-    background-color: var(--body-bg); 
-    /* background-image: var(--body-bg--gradient); */
+    background-color: var(--body-bg);  
     background-repeat: no-repeat; 
     line-height: 1.25; 
-    /* background-color: #e5e5f7;
-    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #e5e5f701 10px ), repeating-linear-gradient( #444cf755, #444cf7 ); */
-
+   
 }
 
 .__panel{
@@ -124,6 +171,17 @@ body{
     display: flex;
     align-items: center;
     justify-items: end;
+}
+
+.toggle-theme-btn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 0 5px;
+    border-radius: 5px;
+    outline: 1px solid #ccc;
 }
 
 /* Site Navigation */ 
