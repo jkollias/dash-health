@@ -1,5 +1,6 @@
 import SiteNavigation from "./SiteNavigation"
 import logo from "../assets/img/dash-health-logo_400.webp"
+import DarkModeSwitcher from "./DarkModeSwitcher"; 
 
 function SiteHeader() {
   return (
@@ -10,6 +11,7 @@ function SiteHeader() {
           </div>
           <div className="site-header__navigation"><SiteNavigation/></div>
           {/* <div className="site-header__user-profile-actions">Actions</div> */}
+          <DarkModeSwitcher/>
       </div>
     </header>
     
