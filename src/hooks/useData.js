@@ -1,8 +1,7 @@
 import { useState, useEffect } from "react";
 
 const useData = () => {
-  const [siteNavLinks, setSiteNavLinks] = useState([]);
-  const [characters, setCharacters] = useState([]);
+  const [siteNavLinks, setSiteNavLinks] = useState([]); 
   const [patients, setPatients] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -10,15 +9,19 @@ const useData = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await fetch("/data/data.json");
-        const patientsRes = await fetch("/data/patients.json");
-        if (!res.ok) throw new Error("Request failed");
-        if (!patientsRes.ok) throw new Error("Request failed");
-        const data = await res.json();
-        const patients = await patientsRes.json();
-        setCharacters(data.site_profiles);
-        setSiteNavLinks(data.site_nav);
-        setPatients(patients);
+        const [res, patientsRes] = await Promise.all([
+          fetch("https://raw.githubusercontent.com/jkollias/dash-health/refs/heads/main/public/data/data.json"),
+          fetch("https://raw.githubusercontent.com/jkollias/dash-health/refs/heads/main/public/data/patients.json") // Point this to the raw patients file
+        ]); 
+        if (!res.ok || !patientsRes.ok) throw new Error("Request failed");
+       
+        const [data, patients] = await Promise.all([
+          res.json(),
+          patientsRes.json()
+        ]); 
+
+        setSiteNavLinks(data.site_nav || []);
+        setPatients(patients || []);
       } catch (err) {
         setError(err.message);
       } finally {
@@ -29,7 +32,7 @@ const useData = () => {
     fetchData();
   }, []);
 
-  return { siteNavLinks, characters, patients, loading, error };
+  return { siteNavLinks, patients, loading, error };
 };
 
 export default useData;
